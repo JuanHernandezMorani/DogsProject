@@ -3,7 +3,7 @@ import Swal from 'sweetalert2';
 
 export function getDogs(){
     return async function(dispatch){
-        const response = await axios.get("https://dogs-project-production.up.railway.app/dogs")
+        const response = await axios.get("https://dogsprojectpage.onrender.com/dogs")
         return dispatch({
             type: "GET_DOGS",
             payload: response.data
@@ -13,7 +13,7 @@ export function getDogs(){
 
 export function getTemperament(){
     return async function(dispatch){
-        const response = await axios.get("https://dogs-project-production.up.railway.app/tempers")
+        const response = await axios.get("https://dogsprojectpage.onrender.com/tempers")
         return dispatch({
             type: "GET_TEMPERS",
             payload: response.data
@@ -22,7 +22,7 @@ export function getTemperament(){
 }
 export function getBreedG(){
     return async function(dispatch){
-        const response = await axios.get("https://dogs-project-production.up.railway.app/breed_groups")
+        const response = await axios.get("https://dogsprojectpage.onrender.com/breed_groups")
         return dispatch({
             type: "GET_BREEDG",
             payload: response.data
@@ -32,7 +32,7 @@ export function getBreedG(){
 export function getName(name){
     return async function(dispatch){
         try {
-            const response = await axios.get(`https://dogs-project-production.up.railway.app/dogs?name=${name}`)
+            const response = await axios.get(`https://dogsprojectpage.onrender.com/dogs?name=${name}`)
             return dispatch({
                 type: "GET_NAME",
                 payload: response.data
@@ -49,7 +49,7 @@ export function getName(name){
 export function PostDog(payload){
     return async function(){
         try{
-            const response = await axios.post("https://dogs-project-production.up.railway.app/dogs", payload)
+            const response = await axios.post("https://dogsprojectpage.onrender.com/dogs", payload)
             return response
         }catch(error){
             Swal.fire({
@@ -96,7 +96,7 @@ export function filterDogByWeight(payload){
 export function getDetail(id) {
     return async function(dispatch){
         try{
-        const response = await axios.get(`https://dogs-project-production.up.railway.app/dogs/${id}`)
+        const response = await axios.get(`https://dogsprojectpage.onrender.com/dogs/${id}`)
         return dispatch({
             type: "GET_DETAIL",
             payload: response.data
@@ -114,7 +114,7 @@ export function getDetail(id) {
 export function removeDog(id){
     return async function(dispatch){
         try{        
-        const response = await axios.delete(`https://dogs-project-production.up.railway.app/deleted/${id}`);
+        const response = await axios.delete(`https://dogsprojectpage.onrender.com/deleted/${id}`);
         return dispatch({
             type: "REMOVE_DOG",
             payload: response.data
