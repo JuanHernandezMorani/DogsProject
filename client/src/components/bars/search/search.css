@@ -1,0 +1,28 @@
+.sb {
+padding-top: 12px;
+}
+
+.sb button{
+    padding: 0.6em 0.8em;
+    background-color: rgba(64, 136, 5, 0.689);
+    color: white;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: black;
+    cursor: pointer;
+}
+
+.sb input[type=text]{
+    flex: 1;
+    padding: 0.6em;
+    border-radius: 20px;
+    border: 0.2em solid rgb(26, 188, 156);
+}
+
+.sb button:hover{
+    background-color: rgb(26, 188, 156);
+    box-shadow: 1px 1px 0 rgb(22, 160, 133), 2px 2px 0 rgb(22, 160, 133),
+    3px 3px 0 rgb(22, 160, 133), 4px 4px 0 rgb(22, 160, 133),
+    5px 5px 0 rgb(22, 160, 133), 6px 6px 0 rgb(22, 160, 133),
+    7px 7px 0 rgb(22, 160, 133);
+}

@@ -1,0 +1,72 @@
+.select {
+    margin: 14px;
+    font-size:16px;
+    font-family:Times New Roman;
+    width:166px;
+    height:27px;
+    border-radius:10px;
+    color:rgba(252, 248, 248, 1);
+    border-color:rgba(12, 12, 15, 1);
+    background:rgba(6, 13, 24, 1);
+    cursor: pointer;
+
+  }
+  
+  .select:hover {
+    background: rgba(155, 175, 214, 1);
+
+  }
+  .link{
+    text-decoration: none;
+  }
+  .cardsContainer{
+    width: 98vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .pg {
+    padding-top: 12px;
+    }
+    
+    .pg button{
+        padding: 0.6em 0.8em;
+        background-color: rgba(64, 136, 5, 0.689);
+        color: white;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: black;
+        cursor: pointer;
+    }
+    
+    .pg span{
+        flex: 1;
+        padding: 0.6em;
+        border-radius: 20px;
+        background-color: rgba(26, 188, 139, 0.671);
+        border-style: solid;
+        border-color: black;
+    }
+    
+    .pg button:hover{
+        background-color: rgba(26, 188, 139, 0.671);
+    }
+
+    .button{
+      padding: 0.6em 0.8em;
+      background-color: rgba(64, 136, 5, 0.689);
+      color: white;
+      border-radius: 20px;
+      border-style: solid;
+      border-color: black;
+      cursor: pointer;
+  }
+  
+  .button:hover{
+    background-color: rgb(26, 188, 156);
+    box-shadow: 1px 1px 0 rgb(22, 160, 133), 2px 2px 0 rgb(22, 160, 133),
+    3px 3px 0 rgb(22, 160, 133), 4px 4px 0 rgb(22, 160, 133),
+    5px 5px 0 rgb(22, 160, 133), 6px 6px 0 rgb(22, 160, 133),
+    7px 7px 0 rgb(22, 160, 133);
+}
